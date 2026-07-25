@@ -1,15 +1,15 @@
 %define upstream_name    Config-Model-Backend-Augeas
-%define upstream_version 0.109
+%define upstream_version 0.126
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Read and write config data through Augeas
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Config/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/Config-Model-Backend-Augeas
+Source0:    https://cpan.metacpan.org/authors/id/D/DD/DDUMONT/Config-Model-Backend-Augeas-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Config::Model)
 BuildRequires: perl(Config::Augeas)
